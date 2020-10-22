@@ -1,0 +1,31 @@
+/* Colors */
+$paragraph-color: #000000;
+$brand-main-color: #ff0000;
+$color-header: #979797;
+$color-dark: #191919;
+$color-light: #FFFFFF;
+$color-background: #F5F5F2;
+$color-main: #F58220;
+$color-secondary: #56819F;
+$color-warning: #FFA200;
+$color-danger: #FF0000;
+$color-success: #04AE00;
+$color-positive: #74B67A;
+
+/* Font sizes */
+$paragraph-font-size: 16px;
+
+/* Fonts */
+$logo-font: 'Satisfy', cursive;
+$main-font: "Open Sans", Helvetica, Arial;
+
+/* Breakpoints */
+
+$tablet-breakpoint: 768px;
+$phone-breakpoint: 576px;
+
+$transition: all 0.3s;
+
+$border: 0.5px solid rgba($color-header, 0.5);
+
+$radius: 5px;
