@@ -1,0 +1,60 @@
+.sidebar {
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+  
+    li {
+      display: flex;
+      margin: 5px 0;
+      padding: 10px;
+      align-items: center;
+      transition: $transition;
+      cursor: pointer;
+  
+      a {
+        text-decoration: none;
+        color: $color-header;
+        font-size: 14px;
+  
+        i {
+          padding: 0 10px;
+        }
+      }
+  
+      &:hover, &.active {
+        background-color: lighten($color-dark, 10);
+        border-left: 4px solid $color-main;
+        
+        a {
+          color: $color-light;
+        }
+      }
+    }
+  
+    &.hide-text {
+      li {
+        justify-content: center;
+        
+        i {
+          font-size: 20px;
+        }
+  
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: $tablet-breakpoint) {
+    .sidebar  ul, .manager-contact {
+      display: none;
+    }  
+  
+    .sidebar.active {
+      >* {
+        display: block;
+      }
+    }
+  }

@@ -1,0 +1,58 @@
+.manager-contact {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: $border;
+  
+    &_wrapper {
+      display: flex;
+      align-items: center;
+      position: relative;
+      text-decoration: none;
+      padding: 5px 10px;
+  
+      &:hover {
+        background-color: lighten($color-dark, 10);
+      }
+    }
+  
+    h2 {
+      padding-left: 10px;
+    }
+  
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+    .manager-status {
+      @include status($color-success);
+      top: 5px;
+      left: 45px;
+    }
+  
+    p {
+      padding-left: 15px;
+      color: $color-secondary;
+    }
+  }
+  
+  .sidebar.hide-text .manager-contact {
+    h2 {
+      display: none;
+    }
+  
+    &_wrapper {
+      justify-content: center;
+      
+  
+      .manager-status {
+        left: 60px;
+      }
+      
+      p {
+        display: none;
+      }
+    }
+  }

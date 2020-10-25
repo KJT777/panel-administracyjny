@@ -1,0 +1,80 @@
+.top-bar ul {
+    display: flex;
+    margin: 0;
+    justify-content: flex-end;
+    height: 100%;
+  
+    li {
+      list-style-type: none;
+      display: flex;
+      border-left: $border;
+  
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $color-header;
+        font-weight: 600;
+        font-size: 20px;
+        
+        i {
+          padding: 0 15px;
+        }
+  
+        p {
+          font-weight: 400;
+          color: $color-secondary;
+          margin: 0;
+          padding-right: 15px;
+          font-size: 14px;
+        }
+  
+        .notification {
+          @include status($color-main);
+          margin-top: -13px;
+          margin-left: 26px;
+        }
+      }
+    }  
+  
+    .wallet {
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+    
+      .general-stats {
+        flex-direction: column;
+        width: 100%;
+        margin: 20px 0 0 0 ;
+        display: none;
+        box-shadow: 1px 3px 7px lighten($color-header, 20);
+      }
+  
+      .general-stats div {
+        width: 100%;
+        align-items: center;
+          
+        p {
+          color: $color-dark;
+        }
+  
+        >* {
+          margin: 10px;
+        }
+      }
+  
+      &.active {
+        height: 200px;
+        background-color: $color-light;
+  
+        .general-stats {
+          margin: 20px 0 0 0 ;
+          display: block;
+        }
+      }
+    }
+  
+    a:hover {
+      background-color: $color-background;
+    }
+  }
