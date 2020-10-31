@@ -1,28 +1,28 @@
 @mixin status($status-color) {
-    width: 10px;
-    height: 10px;
-    background-color: $status-color;
-    border-radius: 50%;
-    display: block;
-    position: absolute;
-  }
+  width: 10px;
+  height: 10px;
+  background-color: $status-color;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+}
   
-  @mixin btn($btn-bg, $btn-text) {
-    background: $btn-bg;
-    color: $btn-text;
-    border: 1px solid inherit;
-    border-radius: $radius;
-    transition: $transition;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-  }
+@mixin btn($btn-bg, $btn-text) {
+  background: $btn-bg;
+  color: $btn-text;
+  border: 1px solid inherit;
+  border-radius: $radius;
+  transition: $transition;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
   
-  @mixin dot($dot-bg) {
-    display: inline-block;
-    background-color: $dot-bg;
-    border-radius: 50%;
-    margin-right: 10px;
-    width: 15px;
-    height: 15px;
-  }
+@mixin dot($dot-bg) {
+  display: inline-block;
+  background-color: $dot-bg;
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+}

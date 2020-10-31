@@ -1,25 +1,25 @@
 .btn-orange {
-    @include btn($color-main, $color-light);  
-    padding: 10px 11px;
-    line-height: 1;
+  @include btn($color-main, $color-light);  
+  padding: 10px 11px;
+  line-height: 1;
     
-    &:hover {
-      background-color: $color-warning;
-    }
+  &:hover {
+    background-color: $color-warning;
   }
+}
   
-  .btn-grey {
-    @include btn($color-header, $color-light);  
-    padding: 10px 11px;
-    line-height: 1;
+.btn-grey {
+  @include btn($color-header, $color-light);  
+  padding: 10px 11px;
+  line-height: 1;
     
-    &:hover {
-      background-color: lighten($color-header, 10);
-    }
+  &:hover {
+    background-color: lighten($color-header, 10);
   }
+}
   
-  .tab-btn {
-    @include btn($color-background, $color-header);
-    padding: 10px;
-    margin: 20px;
-  }
+.tab-btn {
+   @include btn($color-background, $color-header);
+  padding: 10px;
+  margin: 20px;
+}
