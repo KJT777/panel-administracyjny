@@ -1,45 +1,45 @@
 form {
-    .form-section{
-      padding: 30px 0;
-      border-bottom: $border;
-    }
+  .form-section{
+    padding: 30px 0;
+    border-bottom: $border;
+  }
   
-    .field {
-      max-width: 350px;
-      width: 100%;
-      margin: 0 auto;
-      padding: 10px 0;
-  
-    }
-    
-    label {
-      display: flex;
-      justify-content: space-between;
-      font-weight: bold;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-  
-    input {
-      padding: 10px;
-      border: $border;
-      border-radius: $radius;
-    }
-  
-    .btn-wrapper {
-      position: relative;
-      padding: 50px;
-  
-      button {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border: none;
-        padding: 10px 25px;
-      }
-    }
-  
-    
+  .field {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
   
   }
+    
+  label {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  input {
+    padding: 10px;
+    border: $border;
+    border-radius: $radius;
+  }
+  
+  .btn-wrapper {
+    position: relative;
+    padding: 50px;
+  
+    button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: none;
+      padding: 10px 25px;
+    }
+  }
+  
+    
+  
+}

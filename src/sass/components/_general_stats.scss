@@ -1,21 +1,21 @@
 .general-stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 50px 0;
+  
+  div {
     display: flex;
+    width: 40%;
+    border-bottom: $border;
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 50px 0;
   
-    div {
-      display: flex;
-      width: 40%;
-      border-bottom: $border;
-      justify-content: space-between;
+    >* {
+      margin-bottom: 5px;
+    }
   
-      >* {
-        margin-bottom: 5px;
-      }
-  
-      p {
-        color: $color-dark;
-      }
+    p {
+      color: $color-dark;
     }
   }
+}

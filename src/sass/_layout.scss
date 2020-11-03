@@ -58,19 +58,19 @@ body {
       bottom: 0;
       z-index: 999;
   
-    ul {
-      justify-content: flex-start;
-      padding-left: 10px;
+      ul {
+        justify-content: flex-start;
+        padding-left: 10px;
       }
   
-    .wallet {
+      .wallet {
         display: none;
+      }
     }
   }
-}
   
   .main-content-wrapper {
     width: 100%;
     margin-left: 0;
-    }
   }
+}

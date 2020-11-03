@@ -1,32 +1,32 @@
 .sidebar {
-    .logo-wrapper {
-      font-family: $logo-font;
-      font-size: 24px;
-      font-weight: bold;
-      line-height: 70px;
+  .logo-wrapper {
+    font-family: $logo-font;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 70px;
       
-      a {
-        text-decoration: none;
-        color: $color-light;
-        padding: 0 15px;
-      }
-    }
-  
-    &.hide-text {
-      .logo {
-        display: none;
-      }
-  
-      .logo-wrapper {
-        display: flex;
-        justify-content: center;
-      }
+    a {
+      text-decoration: none;
+      color: $color-light;
+      padding: 0 15px;
     }
   }
   
-  @media (max-width: $tablet-breakpoint) {
-    .sidebar .logo-wrapper {
+  &.hide-text {
+    .logo {
+      display: none;
+    }
+  
+    .logo-wrapper {
       display: flex;
-      justify-content: space-between;
-    }  
+      justify-content: center;
+    }
   }
+}
+  
+@media (max-width: $tablet-breakpoint) {
+  .sidebar .logo-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }  
+}

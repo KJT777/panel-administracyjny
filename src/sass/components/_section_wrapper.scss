@@ -1,11 +1,11 @@
 section {
-    background-color: $color-light;
-    margin: 15px;
-    box-shadow: 1px 1px 7px lighten($color-header, 20);
-  }
+  background-color: $color-light;
+  margin: 15px;
+  box-shadow: 1px 1px 7px lighten($color-header, 20);
+}
   
-  .section-wrapper {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
+.section-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

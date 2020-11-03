@@ -19,7 +19,7 @@
 }
   
 .tab-btn {
-   @include btn($color-background, $color-header);
+  @include btn($color-background, $color-header);
   padding: 10px;
   margin: 20px;
 }
