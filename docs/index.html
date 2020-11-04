@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just do it</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7CSatisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <ul>
+        <li>
+          <a href="#" class="wallet">
+            <div>
+              <i class="icon-wallet"></i>$1,500.00<i class="icon-arrow-down"></i>
+            </div>
+            <div class="general-stats">
+              <div>
+                <h3>Visit Signups</h3>
+                <p>124</p>
+              </div>
+              <div>
+                <h3>Net deposit</h3>
+                <p>564</p>
+              </div>
+              <div>
+                <h3>FTD</h3>
+                <p>445</p>
+              </div>
+              <div>
+                <h3>Turn over</h3>
+                <p>432</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="icon-notification"></i><span class="notification"></span
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="icon-profile"></i>
+            <p>Leonardo Dicaprio</p></a
+          >
+        </li>
+        <li>
+          <a href="#" id="quit"><i class="icon-quit"></i></a>
+        </li>
+      </ul>
+    </header>
+    <aside class="sidebar">
+      <div class="logo-wrapper">
+        <a href="index.html" class="logo">Just do it</a>
+        <a href="#" id="hamburger-menu"><i class="fas fa-bars"></i></a>
+      </div>
+      <ul id="sidebar-links">
+        <li class="active">
+          <a href="#general">
+            <i class="icon-general"></i><span>General</span></a>
+        </li>
+        <li>
+          <a href="#details"><i class="icon-details"></i><span>Details</span></a>
+        </li>
+        <li>
+          <a href="#links"><i class="icon-links"></i><span>Links</span></a>
+        </li>
+        <li>
+          <a href="#banners"><i class="icon-banners"></i><span>Banners</span></a>
+        </li>
+        <li>
+          <a href="#personaldata"><i class="icon-personaldata"></i><span>Personal data</span></a>
+        </li>
+        <li>
+          <a href="#payout"><i class="icon-payout"></i><span>Payout</span></a>
+        </li>
+        <li>
+          <a href="#postback"><i class="icon-postback"></i><span>Postback</span></a>
+        </li>
+      </ul>
+      <div class="manager-contact">
+        <h2>Your manager</h2>
+        <a href="#" class="manager-contact_wrapper">
+          <img
+            src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt=""
+          />
+          <span class="manager-status"></span>
+          <p>Mikhael E.</p>
+        </a>
+      </div>
+    </aside>
+    <main class="main-content-wrapper">
+      <section id="general" class="active">
+        <h1 class="section-title">General statistic</h1>
+        <div class="date-picker-wrapper">
+          <div class="date-picker">
+            <input type="date" />
+            <input type="date" />
+            <i class="icon-calendar"></i>
+          </div>
+          <a href="#" class="btn-orange"><i class="icon-refresh"></i></a>
+        </div>
+        <div class="section-wrapper">
+          <div class="general-stats">
+            <div>
+              <h3>Visit Signups</h3>
+              <p>124</p>
+            </div>
+            <div>
+              <h3>Net deposit</h3>
+              <p>564</p>
+            </div>
+            <div>
+              <h3>FTD</h3>
+              <p>445</p>
+            </div>
+            <div>
+              <h3>Turn over</h3>
+              <p>432</p>
+            </div>
+          </div>
+          <div>
+            <h3>Earnings chart</h3>
+            <div class="chart-wrapper">
+              <!-- <a href="#" class="tab-btn"><span class="dot-blue"></span>Signups</a>
+              <a href="#" class="tab-btn"><span class="dot-orange"></span>FTD</a>
+              <a href="#" class="tab-btn active"><span class="dot-green"></span>Earned</a> -->
+              <canvas id="myChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="links" class="active">
+        <h1 class="section-title">Links</h1>
+        <div class="section-wrapper">
+          <a href="#" class="btn-orange">+ add new</a>
+          <div class="links-wrapper">
+            <div class="link-item">
+              <h3>Home page</h3>
+              <a href="#">http://www.homepage.com</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+            <div class="link-item">
+              <h3>Currently offer</h3>
+              <a href="#">http://www.currently.com</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+            <div class="link-item">
+              <h3>Blurpix</h3>
+              <a href="#">http://www.blurpix.com</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+            <div class="link-item">
+              <h3>Your Site</h3>
+              <a href="#">http://www.yoursite.com</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+            <div class="link-item">
+              <h3>Google</h3>
+              <a href="#">http://www.google.com</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+            <div class="link-item">
+              <h3>Facebook</h3>
+              <a href="#">http://www.facebook.com</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+            <div class="link-item">
+              <h3>Dashboard</h3>
+              <a href="#">http://www.dashboard.com</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+            <div class="link-item">
+              <h3>Piece of Wine</h3>
+              <a href="#">http://www.pieceofwine.com</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+            <div class="link-item">
+              <h3>Twitter</h3>
+              <a href="#">http://www.twitter.com</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn-orange">+ add new</a>
+        </div>
+      </section>
+      <section id="details">
+        <h1 class="section-title">Detail statistic</h1>
+        <div class="date-picker-wrapper">
+          <div class="date-picker">
+            <input type="date" />
+            <input type="date" />
+            <i class="icon-calendar"></i>
+          </div>
+          <a href="#" class="btn-orange"><i class="icon-refresh"></i></a>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Tracker name<i class="icon-arrow-up-small"></i></th>
+                <th>Initated date<i class="icon-arrow-up-small"></i></th>
+                <th>Visits<i class="icon-arrow-up-small"></i></th>
+                <th>Unique<i class="icon-arrow-up-small"></i></th>
+                <th>Signups<i class="icon-arrow-up-small"></i></th>
+                <th>FTD<i class="icon-arrow-up-small"></i></th>
+                <th>Depositors<i class="icon-arrow-up-small"></i></th>
+                <th>Deposits ($)<i class="icon-arrow-up-small"></i></th>
+                <th>Payout ($)<i class="icon-arrow-up-small"></i></th>
+                <th>Turnover<i class="icon-arrow-up-small"></i></th>
+                <th>Deal<i class="icon-arrow-up-small"></i></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1 aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>2 aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>3 aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>4 aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>5 aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>6 aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>7 aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>8 aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>9 aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>10 aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>11 aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>12 aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>13 aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>14 aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>15 aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>16 aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>17 aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>18 aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/sam_test</td>
+                <td>17/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>34,425.00</td>
+                <td>234.00</td>
+                <td>421,342.00</td>
+                <td>cpl(200)</td>
+              </tr>
+              <tr>
+                <td>aff/leo_test</td>
+                <td>15/08/02 (12:58)</td>
+                <td>232</td>
+                <td>114</td>
+                <td>12</td>
+                <td>6</td>
+                <td>3</td>
+                <td>29,436.00</td>
+                <td>941.00</td>
+                <td>784,435.00</td>
+                <td>cpl(200)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagination">
+          <a href="#" class="less"><i class="icon-arrow-left"></i></a>
+          <div class="pages">
+          </div>
+          <a href="#" class="more"><i class="icon-arrow-right"></i></a>
+        </div>
+      </section>
+      <section id="banners">
+        <h1 class="section-title">Banners</h1>
+        <div class="section-wrapper">
+          <a href="#" class="btn-orange">+ add new</a>
+          <div class="links-wrapper">
+            <div class="link-item">
+              <h3>Banner main</h3>
+              <a href="#">http://www.website.com/bannermain.gif</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+            <div class="link-item">
+              <h3>Sign up banner</h3>
+              <a href="#">http://www.website.com/signup.gif</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+            <div class="link-item">
+              <h3>Banner left side</h3>
+              <a href="#">http://www.website.com/leftside.gif</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+            <div class="link-item">
+              <h3>Vertical banner</h3>
+              <a href="#">http://www.website.com/vert.gif</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+            <div class="link-item">
+              <h3>Front banner</h3>
+              <a href="#">http://www.website.com/front.gif</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+            <div class="link-item">
+              <h3>Horizontal banner</h3>
+              <a href="#">http://www.website.com/horizontal.gif</a>
+              <div class="icons-wrapper">
+                <a href="#"><i class="icon-links"></i></a>
+                <a href="#"><i class="icon-trash"></i></a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn-orange">+ add new</a>
+        </div>
+      </section>
+      <section id="personaldata">
+        <h1 class="section-title">Personal data</h1>
+        <div class="section-wrapper">
+          <form method="POST">
+            <div class="form-section">
+              <div class="field">
+                <label>
+                  Name
+                  <input type="text" name="name">
+                </label>
+              </div>
+              <div class="field">
+                <label>
+                  Surname
+                  <input type="text" name="surname">
+                </label>
+              </div>
+              <div class="field">
+                <label>
+                  E-mail
+                  <input type="email" name="email">
+                </label>
+              </div>
+              <div class="field">
+                <label>
+                  Phone number
+                  <input type="number" name="phone">
+                </label>
+              </div>
+            </div>
+            <div class="form-section">
+              <div class="field">
+                <label>
+                  Skype
+                  <input type="text" name="skype">
+                </label>
+              </div>
+              <div class="field">
+                <label>
+                  ICQ
+                  <input type="text" name="icq">
+                </label>
+              </div>
+              <div class="field">
+                <label>
+                  Msn
+                  <input type="text" name="msn">
+                </label>
+              </div>
+            </div>
+            <div class="form-section">
+              <div class="field">
+                <label>
+                  Wallet
+                  <input type="text" name="wallet">
+                </label>
+              </div>
+            </div>
+            <div class="form-section">
+              <div class="field">
+                <label>
+                  Password
+                  <input type="password" name="password">
+                </label>
+              </div>
+              <div class="field">
+                <label>
+                  Repeat
+                  <input type="password" name="repeat-password">
+                </label>
+              </div>
+            </div>
+            <div class="btn-wrapper">
+              <button type="submit" class="btn-orange">Save</button>  
+            </div>
+          </form>
+        </div>
+      </section>
+      <section id="payout">
+        <h1 class="section-title">Detail statistic</h1>
+        <div class="date-picker-wrapper">
+          <div class="date-picker">
+            <input type="date" />
+            <input type="date" />
+            <i class="icon-calendar"></i>
+          </div>
+          <a href="#" class="btn-orange"><i class="icon-refresh"></i></a>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Date<i class="icon-arrow-up-small"></i></th>
+                <th>Amount ($)<i class="icon-arrow-up-small"></i></th>
+                <th>Deal<i class="icon-arrow-up-small"></i></th>
+                <th>Account<i class="icon-arrow-up-small"></i></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>04/03/21</td>
+                <td>240.29</td>
+                <td>K5J (7E5)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>30/10/20</td>
+                <td>193.02</td>
+                <td>P0L (0Y0)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>06/11/20</td>
+                <td>387.43</td>
+                <td>K1F (1S3)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>26/01/21</td>
+                <td>876.87</td>
+                <td>F4K (1I8)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>09/05/20</td>
+                <td>691.24</td>
+                <td>Z3I (2J9)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>05/12/19</td>
+                <td>650.60</td>
+                <td>H9I (7T8)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>29/09/19</td>
+                <td>515.16</td>
+                <td>I4T (5X5)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>16/07/20</td>
+                <td>188.31</td>
+                <td>D1M (4T5)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>18/05/20</td>
+                <td>393.01</td>
+                <td>T1N (3E2)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>23/09/19</td>
+                <td>291.67</td>
+                <td>R4Y (7Y2)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>16/07/20</td>
+                <td>631.67</td>
+                <td>X8C (0F4)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>12/08/19</td>
+                <td>311.51</td>
+                <td>D2E (8W9)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>12/06/19</td>
+                <td>217.78</td>
+                <td>F1A (8N2)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>16/11/19</td>
+                <td>629.82</td>
+                <td>M7O (7V1)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>13/06/19</td>
+                <td>192.28</td>
+                <td>M0S (5T0)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>02/06/20</td>
+                <td>184.49</td>
+                <td>V4F (1I0)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>05/09/20</td>
+                <td>858.46</td>
+                <td>E5I (5K5)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>19/03/20</td>
+                <td>427.84</td>
+                <td>P6Y (8D5)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>06/12/19</td>
+                <td>379.95</td>
+                <td>I6S (0U0)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>05/06/19</td>
+                <td>899.25</td>
+                <td>U5N (7M9)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>15/07/20</td>
+                <td>906.49</td>
+                <td>K8X (0Y7)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>08/06/20</td>
+                <td>498.63</td>
+                <td>G9K (8X0)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>30/09/19</td>
+                <td>362.54</td>
+                <td>Z0C (5O4)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>21/06/19</td>
+                <td>653.98</td>
+                <td>Z3O (4I2)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>14/09/20</td>
+                <td>724.10</td>
+                <td>Z9X (1P8)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>15/08/19</td>
+                <td>302.32</td>
+                <td>W0W (3W9)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>13/03/20</td>
+                <td>565.12</td>
+                <td>E9S (3H7)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>23/08/19</td>
+                <td>125.36</td>
+                <td>D4E (4I9)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>08/09/19</td>
+                <td>859.72</td>
+                <td>E7R (6F1)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>11/09/20</td>
+                <td>549.64</td>
+                <td>B2V (7G9)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>20/09/19</td>
+                <td>245.70</td>
+                <td>Y0X (5U2)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>09/12/19</td>
+                <td>782.99</td>
+                <td>H6T (0H4)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>17/06/20</td>
+                <td>217.53</td>
+                <td>P1H (6H9)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>08/02/20</td>
+                <td>413.55</td>
+                <td>R9P (2W0)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>16/01/21</td>
+                <td>332.03</td>
+                <td>P0Z (6W9)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>18/11/20</td>
+                <td>412.91</td>
+                <td>P0P (5X3)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>11/02/20</td>
+                <td>589.85</td>
+                <td>U1R (2F0)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>23/02/21</td>
+                <td>776.66</td>
+                <td>R4F (8V5)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>17/11/20</td>
+                <td>573.79</td>
+                <td>V7K (2G0)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>23/10/20</td>
+                <td>900.06</td>
+                <td>J3G (2Z6)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>09/11/19</td>
+                <td>654.83</td>
+                <td>W3E (0M9)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>25/05/20</td>
+                <td>916.82</td>
+                <td>H2M (9N2)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>13/11/20</td>
+                <td>442.89</td>
+                <td>V5I (7Z6)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>14/04/20</td>
+                <td>431.48</td>
+                <td>E5Q (4S6)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>13/05/20</td>
+                <td>113.71</td>
+                <td>J6A (3A4)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>31/01/21</td>
+                <td>743.53</td>
+                <td>H6W (9S8)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>21/11/20</td>
+                <td>890.21</td>
+                <td>Y6F (1T4)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>20/03/20</td>
+                <td>698.67</td>
+                <td>B8T (2F5)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>14/07/19</td>
+                <td>739.08</td>
+                <td>Y7H (3N8)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>31/10/19</td>
+                <td>290.39</td>
+                <td>O3W (0O1)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>13/09/20</td>
+                <td>566.78</td>
+                <td>X0J (2F9)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>22/08/20</td>
+                <td>322.71</td>
+                <td>T5Q (1L3)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>12/03/21</td>
+                <td>938.81</td>
+                <td>W5R (5Z4)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>18/10/20</td>
+                <td>548.31</td>
+                <td>O8J (0H8)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>09/03/21</td>
+                <td>443.03</td>
+                <td>P1V (2K7)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>03/01/20</td>
+                <td>528.22</td>
+                <td>H5X (4J1)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>19/01/21</td>
+                <td>648.97</td>
+                <td>Q0Q (8C5)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>25/07/19</td>
+                <td>696.02</td>
+                <td>F0Z (6V7)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>02/05/20</td>
+                <td>873.71</td>
+                <td>H4O (1A1)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>21/12/19</td>
+                <td>318.68</td>
+                <td>T4Q (6Z0)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>26/10/20</td>
+                <td>132.75</td>
+                <td>S6X (9P6)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>22/05/20</td>
+                <td>639.32</td>
+                <td>T7T (2S1)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>10/11/20</td>
+                <td>213.87</td>
+                <td>R7S (2G7)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>07/01/21</td>
+                <td>623.80</td>
+                <td>Q9Z (0L3)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>29/11/20</td>
+                <td>530.06</td>
+                <td>K5Y (3E9)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>27/10/20</td>
+                <td>685.87</td>
+                <td>L6R (6N9)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>04/04/21</td>
+                <td>503.66</td>
+                <td>B4R (2K0)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>27/09/20</td>
+                <td>171.02</td>
+                <td>B0W (7J9)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>22/01/20</td>
+                <td>888.15</td>
+                <td>O0A (9R2)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>08/01/20</td>
+                <td>357.93</td>
+                <td>C0E (5F1)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>09/05/21</td>
+                <td>776.89</td>
+                <td>C2R (4N3)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>10/08/20</td>
+                <td>888.76</td>
+                <td>L4J (7Q5)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>25/09/20</td>
+                <td>328.72</td>
+                <td>O0O (0D9)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>03/08/19</td>
+                <td>263.37</td>
+                <td>U6K (0B7)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>19/01/21</td>
+                <td>733.30</td>
+                <td>A9J (8Q4)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>04/07/19</td>
+                <td>518.73</td>
+                <td>E3C (6H0)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>25/08/19</td>
+                <td>823.52</td>
+                <td>T0W (4P8)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>10/05/21</td>
+                <td>979.50</td>
+                <td>P9T (8Q8)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>14/08/20</td>
+                <td>665.50</td>
+                <td>E3Q (2S5)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>24/11/20</td>
+                <td>508.48</td>
+                <td>O8V (5W8)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>11/04/21</td>
+                <td>731.38</td>
+                <td>Z1Z (4F1)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>30/05/20</td>
+                <td>254.52</td>
+                <td>K2Y (8X3)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>24/01/20</td>
+                <td>257.84</td>
+                <td>P1D (5F7)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>14/04/20</td>
+                <td>620.22</td>
+                <td>C1D (2G8)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>18/11/19</td>
+                <td>351.80</td>
+                <td>U2U (2C4)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>16/01/20</td>
+                <td>564.87</td>
+                <td>U8U (1V8)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>28/12/19</td>
+                <td>956.02</td>
+                <td>M2L (0D5)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>24/12/20</td>
+                <td>763.12</td>
+                <td>X1N (2Q7)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>01/08/20</td>
+                <td>102.91</td>
+                <td>O4H (1V5)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>11/06/20</td>
+                <td>115.71</td>
+                <td>L6M (6Q7)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>17/02/21</td>
+                <td>391.24</td>
+                <td>L3D (9I4)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>01/09/20</td>
+                <td>548.30</td>
+                <td>T8O (9P2)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>19/05/19</td>
+                <td>269.07</td>
+                <td>X6S (7V9)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>25/04/20</td>
+                <td>629.72</td>
+                <td>O7S (2T6)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>12/11/20</td>
+                <td>232.06</td>
+                <td>Q4P (6J8)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>27/01/21</td>
+                <td>925.57</td>
+                <td>D5C (0O6)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>06/06/20</td>
+                <td>551.31</td>
+                <td>V0T (6L4)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>21/12/19</td>
+                <td>408.20</td>
+                <td>T8Q (8P8)</td>
+                <td>bank</td>
+              </tr>
+              <tr>
+                <td>01/11/20</td>
+                <td>874.76</td>
+                <td>D8Y (0E2)</td>
+                <td>bank</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagination">
+          <a href="#" class="less"><i class="icon-arrow-left"></i></a>
+          <div class="pages">
+          </div>
+          <a href="#" class="more"><i class="icon-arrow-right"></i></a>
+        </div>
+
+      </section>
+      <section id="postback">
+        <h1>Page under maintanence</h1>
+      </section>
+    </main>
+    <div class="overlay" id="overlay">
+      <div class="modal" id="quit-modal">
+        <div class="btn-close js--close-modal">x</div>
+    
+        <h1>Do you really want to Quit?</h1>
+        <div class="modal-buttons">
+          <a href="" class="btn-grey js--close-modal">Cancel</a>
+          <a href="" class="btn-orange js--close-modal">Quit</a>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
